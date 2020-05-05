@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="380dp"
+        android:layout_height="400dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            >
+
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:hint="Due Date"
+                android:textAlignment="center"
+                android:layout_below="@+id/task_editText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:id="@+id/date_editText"
+                />
+
+
+
+
+            <EditText
+                android:id="@+id/tittle_editText"
+                android:layout_width="150dp"
+                android:layout_marginTop="40dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:hint="Tittle"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/task_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tittle_editText"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:hint="Task to be done"
+                android:inputType="textMultiLine"
+                android:textAlignment="center" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="High Priority"
+                android:layout_below="@+id/date_editText"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="15dp"
+                android:background="@android:color/transparent"
+                android:id="@+id/highPriority_button"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Medium Priority"
+                android:layout_below="@+id/date_editText"
+                android:layout_marginTop="60dp"
+                android:id="@+id/MediumPriority_button"
+                android:background="@android:color/transparent"
+                android:layout_toRightOf="@+id/highPriority_button"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Low Priority"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/date_editText"
+                android:layout_marginTop="60dp"
+                android:textSize="13sp"
+                android:id="@+id/LowPriority_button"
+                android:background="@android:color/transparent"
+                android:layout_toRightOf="@+id/MediumPriority_button"/>
+
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#1FBD26"
+                android:text="SAVE"
+                android:textColor="#FAF5F5"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

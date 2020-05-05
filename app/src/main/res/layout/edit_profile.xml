@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="290dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_marginTop="40dp"
+                android:textSize="25sp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/savedName_textView"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/savedName_textView"
+                android:text="Aditya Arun Sharma"
+                android:layout_marginTop="35dp"
+                android:layout_alignBaseline="@+id/savedName_textView"
+                android:id="@+id/savedName_editText"
+                android:layout_marginLeft="75dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:id="@+id/savedUsername_textView"
+                android:layout_below="@+id/savedName_textView"
+                android:layout_marginLeft="30dp"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aditya"
+                android:layout_below="@+id/savedName_editText"
+                android:layout_marginLeft="200dp"
+                android:id="@+id/savedUserName_editText"
+                android:layout_alignBaseline="@+id/savedUsername_textView"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:layout_below="@+id/savedUsername_textView"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aditya"
+                android:id="@+id/savedPassword_editText"
+                android:layout_below="@+id/savedUserName_editText"
+                android:layout_marginLeft="200dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SAVE"
+                android:layout_alignParentBottom="true"
+                android:background="@color/green"
+                android:textColor="@android:color/white"
+                android:id="@+id/savedButton_editProfile"
+                />
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

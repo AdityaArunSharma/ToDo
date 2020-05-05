@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fff79a</color>
+    <color name="colorPrimaryDark">#fff79a</color>
+    <color name="backgroundYello">#fff79a</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="blue">#1E88E5</color>
+    <color name="dullBlue">#FFADD5F8</color>
+    <color name="dullRed">#FFF06396</color>
+    <color name="red">#E60B08</color>
+    <color name="green">#FF1FBD26</color>
+    <color name="dullGreen">#83F18B</color>
+
+    <color name="green2">#60BE92</color>
+    <color name="high">#ff0000</color>
+    <color name="medium">#e5ff00</color>
+    <color name="low">#FF1FBD26</color>
+</resources>
